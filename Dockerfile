@@ -2,4 +2,5 @@ FROM node:18
 WORKDIR /app
 COPY . .
 EXPOSE 3000
-CMD ["node", "index.js","print("hi")"]
+
+CMD echo "hi" && node index.js
